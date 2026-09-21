@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(**/node_modules/**)",
+      "Read(**/.venv/**)",
+      "Read(**/dist/**)",
+      "Read(**/*.parquet)",
+      "Read(**/*.duckdb)",
+      "Read(**/package-lock.json)",
+      "Read(**/uv.lock)",
+      "Read(**/.env*)"
+    ]
+  }
+}
