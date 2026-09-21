@@ -7,7 +7,7 @@ time the first time.
 ## 1. Create it
 
 ```sh
-cd ~/Developer
+cd <workspace root>
 # in Claude Code:
 /new-project <app-name>
 ```

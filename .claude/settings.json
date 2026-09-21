@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git tag:*)",
+      "Bash(git remote:*)",
+      "Bash(git mv:*)",
+      "Bash(git status:*)",
+      "Bash(git log:*)",
+      "Bash(git diff:*)",
+      "Bash(git restore:*)",
+      "Bash(mkdir:*)",
+      "Bash(mv:*)",
+      "Bash(chmod:*)",
+      "Bash(uv run:*)",
+      "Bash(npm run:*)",
+      "Bash(npx:*)",
+      "Bash(pytest:*)",
+      "Bash(ruff:*)"
+    ]
+  }
+}

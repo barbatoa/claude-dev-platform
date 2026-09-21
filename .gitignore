@@ -1,1 +1,20 @@
+# Projects are independent git repositories. The platform tracks the tier rules that sit
+# beside them, never the project contents themselves.
+prototypes/*/
+production/*/
+archive/*/
+
+# Local machine state and secrets
+.claude/settings.local.json
+.env*
+context/
+
+# Generated data
+*.parquet
+*.duckdb
+dumps/
+
 .DS_Store
+
+# Git bundle backups from history rewrites — keep locally, never publish
+*.bundle

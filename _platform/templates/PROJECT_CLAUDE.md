@@ -1,7 +1,7 @@
 # {{APP_NAME}}
 {{ONE_LINE_PURPOSE}}
 
-Blueprint version at start: prototype-v1
+Blueprint version at start: prototype-v1 — conventions live in [claude-dev-platform](https://github.com/barbatoa/claude-dev-platform), not in this repo.
 Spec: `docs/FUNCTIONAL_SPEC.md` · Plan: `docs/PLAN.md` — read the plan section for the current feature, not the whole file.
 
 ## Enabled modules
