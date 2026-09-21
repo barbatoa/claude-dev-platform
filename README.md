@@ -82,6 +82,19 @@ through it end to end. Blueprint changes are versioned in `_platform/CHANGELOG.m
 project records the blueprint version it started on. Deviations from the blueprint are
 recorded as ADRs in the project's `docs/adr/`.
 
+## Built with this
+
+[**content-digest**](https://github.com/barbatoa/content-digest) — weekly curated lists of
+recent YouTube videos on a domain, scored by an LLM and published to a Google Sheet. It went
+through this process end to end, and `_platform/NEW-PROJECT.md` was written from what that
+cost the first time.
+
+It is also the clearest example of the blueprint being *overridden* rather than followed:
+`prototype-v1` specifies a React PWA on Cloud Run with a Postgres source of truth, and
+content-digest is a local scheduled CLI with no web tier, no database and no cloud. That
+divergence is argued in its `docs/adr/0001-local-scheduled-cli-not-cloud-pwa.md`. A blueprint
+you cannot depart from in writing is a cage, not a default.
+
 ## Why these choices
 
 `_platform/RATIONALE.md` is the long-form reasoning — the constraints that decide
