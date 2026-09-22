@@ -87,6 +87,7 @@ recorded as ADRs in the project's `docs/adr/`.
 | Project | Tier | Blueprint | Repository |
 |---|---|---|---|
 | **content-digest** | prototype | `prototype-v1`, overridden by ADR-0001 | private |
+| **family-organizer** | prototype | `prototype-v1`, overridden by ADR-0001–0004 | private |
 
 Projects are private by default and become public only if I decide to expose one, so the
 repository column is the honest state rather than a link that would fail to open. A project's
@@ -97,11 +98,26 @@ is what promotes it.
 by an LLM and published to a Google Sheet. It went through this process end to end, and
 `_platform/NEW-PROJECT.md` was written from what that cost the first time.
 
-It is also the clearest example of the blueprint being *overridden* rather than followed:
-`prototype-v1` specifies a React PWA on Cloud Run with a Postgres source of truth, and
-content-digest is a local scheduled CLI with no web tier, no database and no cloud. That
-divergence is argued in its `docs/adr/0001-local-scheduled-cli-not-cloud-pwa.md`. A blueprint
-you cannot depart from in writing is a cage, not a default.
+It is the example of the blueprint being *overridden* rather than followed: `prototype-v1`
+specifies a React PWA on Cloud Run with a Postgres source of truth, and content-digest is a
+local CLI, run by hand, with no web tier, no database and no cloud. That divergence is argued in
+its `docs/adr/0001-local-scheduled-cli-not-cloud-pwa.md`. A blueprint you cannot depart from in
+writing is a cage, not a default.
+
+**family-organizer** is a household organiser for two people: one list a couple plans together
+each week, and a private daily list neither of them can write to for the other. It is the
+clearest example of the *process* rather than the stack — a functional spec, a release ladder,
+a plan for its first release and fifteen ADRs, and not one line of code yet. Its first release
+is a two-week paper pilot with no app at all, which can cancel the project for the price of a
+spreadsheet.
+
+It departs from the blueprint further than content-digest does, and in a different direction:
+not a different shape of program, but less of the blueprint surviving. No Postgres, no FastAPI,
+no analytics tier, no Firebase Auth — the source of truth is a Google Spreadsheet the
+non-technical half of the household can edit by hand on her phone, read and written straight
+from the browser. What survives is the PWA, the hosting and the principles. It also gave
+something back: a release ladder (ADR-0014) where each feature ships alone, is used for a
+fortnight, and faces a gate that may answer *stop*.
 
 ## Why these choices
 
