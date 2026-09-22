@@ -87,7 +87,7 @@ recorded as ADRs in the project's `docs/adr/`.
 | Project | Tier | Blueprint | Repository |
 |---|---|---|---|
 | **content-digest** | prototype | `prototype-v1`, overridden by ADR-0001 | private |
-| **family-organizer** | prototype | `prototype-v1`, overridden by ADR-0001–0004 | private |
+| **daily-pull** | prototype | `prototype-v1`, overridden by ADR-0001–0004 | private |
 
 Projects are private by default and become public only if I decide to expose one, so the
 repository column is the honest state rather than a link that would fail to open. A project's
@@ -104,7 +104,7 @@ local CLI, run by hand, with no web tier, no database and no cloud. That diverge
 its `docs/adr/0001-local-scheduled-cli-not-cloud-pwa.md`. A blueprint you cannot depart from in
 writing is a cage, not a default.
 
-**family-organizer** is a household organiser for two people: one list a couple plans together
+**daily-pull** is a household organiser for two people: one list a couple plans together
 each week, and a private daily list neither of them can write to for the other. It is the
 clearest example of the *process* rather than the stack — a functional spec, a release ladder,
 a plan for its first release and fifteen ADRs, and not one line of code yet. Its first release
